@@ -1,0 +1,89 @@
+:root {
+    --color-texto: #313703;
+    /*luego agregare los demas colores*/
+
+}
+
+ion-content {
+    --background:  #e0e0e0;
+}
+
+.div-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+ion-card {
+    --background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+ion-card-header {
+    text-align: center;
+}
+
+.logo {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title-register {
+    color: #313703;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.text-p-1 {
+    color: #313703;
+    text-align: center;
+}
+
+ion-card {
+    border-radius: 8px;
+}
+
+.input-focus {
+    --border-color: red;
+}
+
+.text-p-2 {
+    text-align: center;
+    margin-top: 12px;
+    color: red;
+    cursor: default;
+}
+
+.button-registro {
+    --background: linear-gradient(to right, #ff8000, #ffc000);
+    color: #313703;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border-bottom: 2px solid #e0e0e0;
+    border-top: 2px solid #d5a700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button-recuperar {
+    --background: #ffffff;
+    color: #313703;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: 2px solid #d5a700;
+}
+
+.footer {
+    --background: none;
+    text-align: center;
+    border: none;
+    color: #313703;
+}

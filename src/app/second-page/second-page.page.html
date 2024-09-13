@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-principal">
+    <ion-title>secondPage</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">secondPage</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- Mensaje de bienvenida con el nombre de usuario -->
+<div class="div-titulo">
+  <h1 class="titulo-principal">¡Te damos la bienvenida!</h1>
+</div>
+
+  <ion-card class="card-usuario">
+    <!--
+    <ion-card-header class="title">
+      <ion-card-title ></ion-card-title>
+    </ion-card-header>-->
+    <ion-card-content class="ion-bienvenida">
+      <p class="text-p-bienvenida-user">!Hola, {{ username }}! ahora te encuentras en la página principal.</p>
+    </ion-card-content>
+    
+    <div class="div-button">
+      <ion-button class="boton-regresar" [routerLink]="['']" expand="full" shape="round">
+        <ion-icon name="arrow-back"></ion-icon>
+        Regresar
+      </ion-button>
+    </div>
+  </ion-card>
+
+  <!--- Esto es un ejemplo para que la pagina no se vea vacia, borrar proximamnete-->
+  <ion-card class ="card-tu-salud">
+    <div class="div-salud">
+      <img class="img-salud" src="/assets/img/anuncio-tu-salud-es-lo-primero.png" />
+    </div>
+
+    <ion-card-header>
+      <ion-card-title class="titulo-salud">Tu salud es lo primero</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Durante la pandemia, recuerda siempre lavarte las manos, usar mascarilla, mantener distancia física y cubrirte al toser o estornudar. Siguiendo estas medidas, cuidamos de todos.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

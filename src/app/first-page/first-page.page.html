@@ -1,0 +1,72 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>firstPage</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content [fullscreen]="true">
+ <!-- <ion-header collapse="condense">
+    
+    <ion-toolbar>
+      <ion-title size="large">firstPage</ion-title>
+    </ion-toolbar>
+  </ion-header>-->
+
+  <div class="div-formulario">
+    <ion-card> 
+      <ion-card-header>
+        <ion-card-title class="title-register">Ingreso de usuario </ion-card-title>
+      </ion-card-header>
+
+      <img class = "logo" src="/assets/img/logo-proyecto.png" alt="mi imagen">
+
+      <ion-card-content>
+        <p class="text-p-1">Ingresa tu nombre y una contraseña de 10 digitos.</p>
+        <!-- Campos de informacion  -->
+          <ion-input
+            [(ngModel)]="username"
+            label="usuario"
+            label-placement="floating"
+            fill="outline"
+            placeholder="Enter text"
+            maxlength="20"
+            [ngClass]="{'input-focus': !inputValidoName}"
+            slot="end">
+          </ion-input> 
+
+        <br />
+        
+        <ion-input
+        [(ngModel)]="password" 
+        label="CONTRASEÑA"  
+        label-placement="floating" 
+        fill="outline"
+        placeholder="Enter text"
+        maxlength="30"
+        type="password"
+        value="password"
+        
+        [ngClass]="{'input-focus': !inputValidoPass}">
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input> 
+        
+        <!-- Mensaje de validacion -->
+        <p [ngClass]="{'text-validate': !MensajeValidacion}" class="text-p-2">{{ mensaje }}</p>
+
+        <!-- Botones -->
+        <div class="button-page">
+          <ion-button class="button-registro" shape="round" expand="full"  (click)="gotoSecondPage()">INGRESAR</ion-button>
+          <ion-button class="button-recuperar"  shape="round" expand="full" (click)="gotoThirdPage()">RECUPERAR</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+  
+  <ion-footer >
+    <ion-toolbar class ="footer">
+      <ion-title>RegistrAPP</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+  
